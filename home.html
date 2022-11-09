@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+</head>
+<style>
+    .hidden {
+        display: none;
+        transition: 0.5s;
+    }
+
+    ol {
+        color: black;
+        background: yellowgreen;
+    }
+
+    table {
+        background: pink;
+    }
+
+    .thank {
+        color: red;
+    }
+</style>
+
+<body>
+    <section>
+        <H1 class="text-primary text-center"></H1>
+        <div class="container m-auto my-5 p-0  text-center w-50">
+
+            <ol id="itemList" class="list-group boder boder-info list">
+                ယနေ့ရရှိနိုင်သော အမျိူးအမည်များ
+            </ol>
+            <ol id="fruitList" class="list-group boder boder-info list hidden">
+                ယနေ့ရရှိနိုင်သော သစ်သီးများ
+            </ol>
+            <ol id="drinkList" class="list-group boder boder-info list hidden">
+                ယနေ့ရရှိနိုင်သော ဘီယာများ
+            </ol>
+            <ol id="foodList" class="list-group boder boder-info list hidden">
+                ယနေ့ရရှိနိုင်သော အမြည်းများ
+            </ol>
+            <div id="form">
+                <input type="text" class="form-control input" placeholder="Enter Order">
+                <input type="submit" class="form-control  bg-info submit" value="Order">
+            </div>
+        </div>
+
+        <table id="voucher" class="table table-bordered m-auto  my-5 p-0  text-center w-50 hidden">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+        </table>
+
+        <div class="text-success text-center">
+            <a href="#" onclick="alert(`ချစ်တယ်နော် တကယ်ဖွင့်ရင် လာစားလှည့်&#128151`)" class="btn btn-success">
+                <i class="bi bi-geo-alt"></i><span> location</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="shopping.js"></script>
+</body>
+
+</html>
